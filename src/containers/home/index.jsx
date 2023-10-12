@@ -1,4 +1,4 @@
-import IMG from "../../../public/logo.svg";
+import IMG from "/logo.svg";
 import ShoppingCart from "../../components/ShoppingCart";
 import { Container } from "./styles";
 

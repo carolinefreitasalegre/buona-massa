@@ -1,4 +1,4 @@
-import IMG from "../../../public/logo.svg";
+import IMG from "/logo.svg";
 import ShoppingCart from "../ShoppingCart";
 import { Container } from "./styles";
 import { Link } from "react-router-dom";
