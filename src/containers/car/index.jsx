@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-import IMG from "../../assets/pizza/sabor.svg";
+// import IMG from "../../assets/pizza/sabor.svg";
 import { useContext, useEffect, useState } from "react";
 import { ApiContext } from "../../context";
 import { BsTrash } from "react-icons/bs";
