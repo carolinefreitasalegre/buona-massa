@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackGroung from "/backimage.png";
+import BackGroung from "../../assets/backimage.png";
 
 export const Container = styled.header`
   /* z-index: 100000; */
