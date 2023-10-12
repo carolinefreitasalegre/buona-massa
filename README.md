@@ -1,9 +1,5 @@
 # React + Vite
+<h3>Tamplate de Pizzaria desenvolvido em ReactJs + Styled-Components + React-router-dom</h3> 
+<p>Utilizados os Hooks UseContext, UseEffect e UseState.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# buona-massa
+![image](https://github.com/carolinefreitasalegre/buona-massa/assets/113471098/5a12a765-4cad-42ee-852e-8eac09de137a)
