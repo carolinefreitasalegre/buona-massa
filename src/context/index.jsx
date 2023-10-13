@@ -12,7 +12,7 @@ export const ApiProvider = ({ children }) => {
   useEffect(() => {
     async function listPromo() {
       const api = await axios
-        .get("src/api/data.json")
+        .get("src/service/data.json")
         .then((res) => {
           const listPizza = res.data.pizza;
           const listRefri = res.data.refrigerantes;
@@ -29,7 +29,7 @@ export const ApiProvider = ({ children }) => {
   useEffect(() => {
     async function listPizza() {
       const api = await axios
-        .get("src/api/data.json")
+        .get("src/service/data.json")
         .then((response) => {
           const res = response.data.pizzas;
           const resBebidas = response.data.refrigerantes;
