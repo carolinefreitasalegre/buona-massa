@@ -5,7 +5,7 @@
       "nome": "Mussarela",
       "valor": 30,
       "ingredientes": ["molho de tomate", "mussarela", "orégano"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 2,
@@ -18,14 +18,14 @@
         "ovo",
         "cebola"
       ],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 3,
       "nome": "Calabresa",
       "valor": 40,
       "ingredientes": ["molho de tomate", "mussarela", "calabresa"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 4,
@@ -39,14 +39,14 @@
         "azeitona",
         "ervilha"
       ],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 5,
       "nome": "Frango com Catupiry",
       "valor": 45,
       "ingredientes": ["molho de tomate", "mussarela", "frango", "catupiry"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 6,
@@ -59,20 +59,20 @@
         "queijo cheddar",
         "queijo parmesão"
       ],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "nome": "Margherita",
       "valor": 35,
       "ingredientes": ["molho de tomate", "mussarela", "manjericão"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 7,
       "nome": "Napolitana",
       "valor": 35,
       "ingredientes": ["molho de tomate", "mussarela", "azeitonas pretas"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 8,
@@ -84,21 +84,21 @@
         "atum",
         "azeitonas pretas"
       ],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 9,
       "nome": "Palmito",
       "valor": 40,
       "ingredientes": ["molho de tomate", "mussarela", "palmito"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     },
     {
       "id": 10,
       "nome": "Peperoni",
       "valor": 45,
       "ingredientes": ["molho de tomate", "mussarela", "pepperoni"],
-      "img": "src/assets/pizza/sabor.svg"
+      "img": "images/pizza/sabor.svg"
     }
   ],
   "refrigerantes": [
@@ -107,14 +107,14 @@
       "nome": "Coca-Cola",
       "ml": 350,
       "valor": 7.0,
-      "img": "src/assets/refri/coca-lata.png"
+      "img": "images/refri/coca-lata.png"
     },
     {
       "id": 12,
       "nome": "Coca Zero",
       "ml": 350,
       "valor": 6.5,
-      "img": "src/assets/refri/coca-zero.svg"
+      "img": "images/refri/coca-zero.svg"
     },
 
     {
@@ -122,21 +122,21 @@
       "nome": "Fanta Laranja",
       "ml": 350,
       "valor": 7.0,
-      "img": "src/assets/refri/fanta.svg"
+      "img": "images/refri/fanta.svg"
     },
     {
       "id": 14,
       "nome": "Skol",
       "ml": 350,
       "valor": 5.0,
-      "img": "src/assets/refri/skol.png"
+      "img": "images/refri/skol.png"
     },
     {
       "id": 15,
       "nome": "Pepsi",
       "ml": 350,
       "valor": 6.5,
-      "img": "src/assets/refri/pepsi.svg"
+      "img": "images/refri/pepsi.svg"
     },
 
     {
@@ -144,7 +144,7 @@
       "nome": "Coca-Cola 2L",
       "ml": "2L",
       "valor": 10.5,
-      "img": "src/assets/refri/coca.svg"
+      "img": "images/refri/coca.svg"
     }
   ],
   "lanches": [
@@ -152,14 +152,14 @@
       "id": 18,
       "nome": "X-Salada",
       "valor": 20,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": ["hambúrguer de carne", "queijo", "alface", "tomate"]
     },
     {
       "id": 19,
       "nome": "X-Bacon",
       "valor": 25,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": [
         "hambúrguer de carne",
         "queijo",
@@ -172,7 +172,7 @@
       "id": 20,
       "nome": "X-Egg",
       "valor": 22,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": [
         "hambúrguer de carne",
         "queijo",
@@ -185,21 +185,21 @@
       "id": 21,
       "nome": "X-Frango",
       "valor": 23,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": ["filé de frango", "queijo", "alface", "tomate"]
     },
     {
       "id": 22,
       "nome": "X-Calabresa",
       "valor": 24,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": ["linguiça calabresa", "queijo", "alface", "tomate"]
     },
     {
       "id": 23,
       "nome": "X-Vegano",
       "valor": 21,
-      "img": "src/assets/lanche/lanche.svg",
+      "img": "images/lanche/lanche.svg",
       "ingredientes": ["hambúrguer vegano", "queijo vegano", "alface", "tomate"]
     }
   ]
