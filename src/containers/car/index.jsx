@@ -39,9 +39,10 @@ export default function Carrinho() {
       alert("Seu carrinho ainda está vazio...😕");
     } else {
       alert("Obrigada por comprar com a gente! 😊");
-      //location.reload();
+      
       localStorage.removeItem("itens");
       navigate("/");
+      location.reload()
     }
   }
 
