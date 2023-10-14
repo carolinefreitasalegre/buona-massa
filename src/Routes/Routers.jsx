@@ -9,7 +9,7 @@ import CardapioCompleto from "../containers/completo";
 export default function Routers() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" exact element={<Home />} />
       <Route path="/pizzas" element={<Pizza />} />
       <Route path="/bebidas" element={<Bebidas />} />
       <Route path="/lanches" element={<Lanches />} />

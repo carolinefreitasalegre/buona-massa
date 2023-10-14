@@ -9,25 +9,6 @@ export const ApiProvider = ({ children }) => {
   const [bebidas, setBebidas] = useState([]);
   const [lanches, setLanches] = useState([]);
 
-  /*
-  useEffect(() => {
-    async function listPromo() {
-      const api = await axios
-        .get("src/service/data.json")
-        .then((res) => {
-          const listPizza = res.data.pizza;
-          const listRefri = res.data.refrigerantes;
-          const abs = listPizza.forEach((element) => {
-            element.sabores;
-            console.log(abs);
-          });
-          setPromo();
-        })
-        .catch((err) => console.log("Nao rodou!"));
-    }
-  }, []);
-*/
-
   useEffect(() => {
     async function listPizza() {
       const api = await axios
@@ -66,16 +47,6 @@ export const ApiProvider = ({ children }) => {
     localStorage.setItem("itens", JSON.stringify(updatedList));
   }
 
-  function handleFinish() {
-    if (list.length < 1) {
-      alert("Seu carrinho ainda está vazio...😕");
-    } else {
-      alert("Obrigada por comprar com a gente! 😊");
-      location.reload();
-      localStorage.removeItem("itens");
-    }
-  }
-
   useEffect(() => {
     async function buscarLista() {
       const carList = await JSON.parse(localStorage.getItem("itens"));
@@ -98,7 +69,6 @@ export const ApiProvider = ({ children }) => {
         car,
         list,
         setList,
-        handleFinish,
         deletarItem,
       }}
     >

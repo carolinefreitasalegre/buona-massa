@@ -10,6 +10,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import { useContext, useEffect, useState } from "react";
 import { ApiContext } from "../../context/index.jsx";
 import { BsTrash } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 export default function Carrinho() {
   const Img = styled("img")({
@@ -19,7 +20,7 @@ export default function Carrinho() {
     maxHeight: "100%",
   });
 
-  const { car, list, handleFinish, deletarItem } = useContext(ApiContext);
+  const { car, list, deletarItem } = useContext(ApiContext);
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -31,6 +32,18 @@ export default function Carrinho() {
     }
     calcTotal();
   }, [list, car]);
+
+  const navigate = useNavigate();
+  function handleFinish() {
+    if (list.length < 1) {
+      alert("Seu carrinho ainda está vazio...😕");
+    } else {
+      alert("Obrigada por comprar com a gente! 😊");
+      location.reload();
+      localStorage.removeItem("itens");
+      navigate("/");
+    }
+  }
 
   return (
     <>
