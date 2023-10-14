@@ -9,6 +9,7 @@ export const ApiProvider = ({ children }) => {
   const [bebidas, setBebidas] = useState([]);
   const [lanches, setLanches] = useState([]);
 
+  /*
   useEffect(() => {
     async function listPromo() {
       const api = await axios
@@ -25,6 +26,7 @@ export const ApiProvider = ({ children }) => {
         .catch((err) => console.log("Nao rodou!"));
     }
   }, []);
+*/
 
   useEffect(() => {
     async function listPizza() {
@@ -41,6 +43,7 @@ export const ApiProvider = ({ children }) => {
         .catch((error) => {
           console.error("Erro ao buscar os dados:", error);
         });
+      return api;
     }
     listPizza();
   }, []);
@@ -57,10 +60,20 @@ export const ApiProvider = ({ children }) => {
     alert(`Item adicionado com sucesso! 😉`);
   }
 
+  function deletarItem(itemId) {
+    const updatedList = list.filter((item) => item.id !== itemId);
+    setList(updatedList);
+    localStorage.setItem("itens", JSON.stringify(updatedList));
+  }
+
   function handleFinish() {
-    alert("Obrigada por comprar com a gente! 😊");
-    location.reload();
-    localStorage.removeItem("itens");
+    if (list.length < 1) {
+      alert("Seu carrinho ainda está vazio...😕");
+    } else {
+      alert("Obrigada por comprar com a gente! 😊");
+      location.reload();
+      localStorage.removeItem("itens");
+    }
   }
 
   useEffect(() => {
@@ -86,6 +99,7 @@ export const ApiProvider = ({ children }) => {
         list,
         setList,
         handleFinish,
+        deletarItem,
       }}
     >
       {children}

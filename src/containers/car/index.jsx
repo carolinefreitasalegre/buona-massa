@@ -7,9 +7,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import ButtonBase from "@mui/material/ButtonBase";
-// import IMG from "../../assets/pizza/sabor.svg";
 import { useContext, useEffect, useState } from "react";
-import { ApiContext } from "../../context";
+import { ApiContext } from "../../context/index.jsx";
 import { BsTrash } from "react-icons/bs";
 
 export default function Carrinho() {
@@ -20,7 +19,7 @@ export default function Carrinho() {
     maxHeight: "100%",
   });
 
-  const { car, list, handleFinish } = useContext(ApiContext);
+  const { car, list, handleFinish, deletarItem } = useContext(ApiContext);
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -86,7 +85,7 @@ export default function Carrinho() {
                       variant="body2"
                       marginBottom={5}
                     >
-                      <BsTrash onClick={() => deletarItem()} />
+                      <BsTrash onClick={() => deletarItem(item.id)} />
                     </Typography>
                   </Grid>
                 </Grid>
@@ -120,6 +119,7 @@ export default function Carrinho() {
             })}
           </p>
         </TitlleText>
+
         <Btn onClick={() => handleFinish()}>Finalizar</Btn>
       </Container>
     </>

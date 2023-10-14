@@ -6,7 +6,7 @@ import { BsFillCartCheckFill } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Footer from "../../components/footer/index";
-import { ApiContext, ApiProvider } from "../../context";
+import { ApiContext, ApiProvider } from "../../context/index";
 
 export default function Bebidas() {
   const { bebidas, handleClick, car } = useContext(ApiContext);

@@ -50,6 +50,13 @@ export const Container = styled.header`
       &:hover {
         color: rgb(188, 20, 20);
       }
+      &:focus {
+        color: rgb(188, 20, 20);
+
+        &:active {
+          color: rgb(188, 20, 20);
+        }
+      }
     }
   }
 

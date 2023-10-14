@@ -32,6 +32,7 @@ export const ListPizza = styled.div`
       cursor: pointer;
       background-color: #f5f5f5;
       border: none;
+      transition: background-color 0.3s;
     }
   }
 `;

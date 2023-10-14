@@ -50,12 +50,14 @@ export default function Pizza() {
                     })}
                   </Card.Text>
                   <Button
+                    actived
+                    active={false}
                     variant="primary"
                     style={{ position: "absolute", left: 10, bottom: 10 }}
                     onClick={() => handleClick(item)}
                   >
                     <BsFillCartCheckFill
-                      style={{ color: "#0a770a" }}
+                      style={{ color: "#0A770A" }}
                     ></BsFillCartCheckFill>
                   </Button>
                 </Card.Body>
