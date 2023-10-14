@@ -31,7 +31,7 @@ export const ApiProvider = ({ children }) => {
   useEffect(() => {
     async function listPizza() {
       const api = await axios
-        .get("src/service/data.json")
+        .get("/service/data.json")
         .then((response) => {
           const res = response.data.pizzas;
           const resBebidas = response.data.refrigerantes;
@@ -106,3 +106,5 @@ export const ApiProvider = ({ children }) => {
     </ApiContext.Provider>
   );
 };
+
+// export default { ApiContext, ApiProvider };
